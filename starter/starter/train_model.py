@@ -6,6 +6,7 @@ from ml.model import train_model, inference, compute_model_metrics
 import os
 import pandas as pd
 import numpy as np
+import pickle
 
 
 # Add code to load in the data.
@@ -44,7 +45,15 @@ X_test, y_test, encoder_test, lb_test = process_data(
 
 # Train and save a model.
 model = train_model(X_train, y_train)
-preds = inference(model, X_test)
+with open(DATA_DIR + "/../model/model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+#test reading the model back in
+with open(DATA_DIR + "/../model/model.pkl", "rb") as f:
+    model2 = pickle.load(f)
+
+
+preds = inference(model2, X_test)
 
 precision, recall, fbeta = compute_model_metrics(y_test, preds)
 
