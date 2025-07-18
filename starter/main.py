@@ -7,15 +7,23 @@ import numpy as np
 import pickle
 from starter2.ml.data import process_data
 from starter2.ml.model import inference
+import os
 
 app = FastAPI()
 
 # Load model and encoders
-with open("model/model.pkl", "rb") as f:
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # directory of the current script (main.py)
+model_path = os.path.join(BASE_DIR, "model", "model.pkl")
+encoder_path = os.path.join(BASE_DIR, "model", "encoder.pkl")
+lb_path = os.path.join(BASE_DIR, "model", "lb.pkl")
+
+
+with open(model_path, "rb") as f:
     model = pickle.load(f)
-with open("model/encoder.pkl", "rb") as f:
+with open(encoder_path, "rb") as f:
     encoder = pickle.load(f)
-with open("model/lb.pkl", "rb") as f:
+with open(lb_path, "rb") as f:
     lb = pickle.load(f)
 
 # Categorical features
