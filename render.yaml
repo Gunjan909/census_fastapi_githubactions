@@ -3,5 +3,5 @@ services:
     name: census-api
     env: python
     buildCommand: pip install -r starter/requirements.txt
-    startCommand: uvicorn starter.main:app --host 0.0.0.0 --port 10000
+    startCommand: PYTHONPATH="." uvicorn starter.main:app --host 0.0.0.0 --port 10000
     autoDeploy: true
