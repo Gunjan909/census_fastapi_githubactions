@@ -1,13 +1,17 @@
 # Script to train machine learning model.
 
 from sklearn.model_selection import train_test_split
-from ml.data import process_data
+from ml.data import process_data, get_processed_column_names
 from ml.model import train_model, inference, compute_model_metrics
 import os
 import pandas as pd
 import numpy as np
 import pickle
+import random
 
+SEED = 42
+random.seed(SEED)
+np.random.seed(SEED)
 
 # Add code to load in the data.
 DATA_DIR = '/home/gunjan/workspace/census_fastapi_githubactions/starter/data/'
@@ -38,15 +42,23 @@ X_train, y_train, encoder, lb = process_data(
     train, categorical_features=cat_features, label="salary", training=True
 )
 
+
 X_test, y_test, encoder_test, lb_test = process_data(
     test, categorical_features=cat_features, label='salary', encoder=encoder, lb=lb, training=False
 )
 
+#print(X_train.shape)
 
 # Train and save a model.
 model = train_model(X_train, y_train)
 with open(DATA_DIR + "/../model/model.pkl", "wb") as f:
     pickle.dump(model, f)
+
+with open(DATA_DIR + "/../model/encoder.pkl", "wb") as f:
+    pickle.dump(encoder, f)
+
+with open(DATA_DIR + "/../model/lb.pkl", "wb") as f:
+    pickle.dump(lb, f)
 
 #test reading the model back in
 with open(DATA_DIR + "/../model/model.pkl", "rb") as f:

@@ -51,7 +51,8 @@ def process_data(
         y = np.array([])
 
     X_categorical = X[categorical_features].values
-    X_continuous = X.drop(*[categorical_features], axis=1)
+    #X_continuous = X.drop(*[categorical_features], axis=1)
+    X_continuous = X.drop(columns=categorical_features)
 
     if training is True:
         encoder = OneHotEncoder(sparse=False, handle_unknown="ignore")
@@ -68,3 +69,38 @@ def process_data(
 
     X = np.concatenate([X_continuous, X_categorical], axis=1)
     return X, y, encoder, lb
+
+
+
+
+
+
+def get_processed_column_names(X, categorical_features, encoder, label='salary'):
+    """
+    Get the column names of the processed feature array as output by `process_data`.
+
+    Parameters
+    ----------
+    X : pd.DataFrame
+        Original input DataFrame (before processing).
+    categorical_features : list[str]
+        List of categorical feature names used in one-hot encoding.
+    encoder : sklearn.preprocessing.OneHotEncoder
+        Fitted encoder from `process_data`.
+
+    Returns
+    -------
+    feature_names : list[str]
+        Ordered list of column names after processing.
+    """
+    X = X.drop([label], axis=1)
+
+    # Continuous columns are all columns except the categorical ones; also drop salary
+    continuous_columns = X.drop(columns=categorical_features).columns.tolist()
+
+    # Get one-hot encoded feature names
+    categorical_encoded_names = encoder.get_feature_names_out(categorical_features).tolist()
+
+    # Final order: continuous first, then one-hot encoded columns
+    return continuous_columns + categorical_encoded_names
+
