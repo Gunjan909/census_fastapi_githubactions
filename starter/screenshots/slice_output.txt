@@ -1,0 +1,426 @@
+
+== native-country_? ==
+Rows: 125
+Precision: 0.75
+Recall: 0.6774193548387096
+fbeta: 0.7118644067796611
+
+== native-country_Cambodia ==
+Rows: 3
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Canada ==
+Rows: 22
+Precision: 0.6666666666666666
+Recall: 0.75
+fbeta: 0.7058823529411765
+
+== native-country_China ==
+Rows: 18
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Columbia ==
+Rows: 6
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Cuba ==
+Rows: 19
+Precision: 0.6666666666666666
+Recall: 0.8
+fbeta: 0.7272727272727272
+
+== native-country_Dominican-Republic ==
+Rows: 8
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Ecuador ==
+Rows: 5
+Precision: 1.0
+Recall: 0.5
+fbeta: 0.6666666666666666
+
+== native-country_El-Salvador ==
+Rows: 20
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_England ==
+Rows: 14
+Precision: 0.6666666666666666
+Recall: 0.5
+fbeta: 0.5714285714285715
+
+== native-country_France ==
+Rows: 5
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Germany ==
+Rows: 32
+Precision: 0.8461538461538461
+Recall: 0.8461538461538461
+fbeta: 0.8461538461538461
+
+== native-country_Greece ==
+Rows: 7
+Precision: 0.0
+Recall: 0.0
+fbeta: 1.0
+
+== native-country_Guatemala ==
+Rows: 13
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Haiti ==
+Rows: 6
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Honduras ==
+Rows: 4
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Hong ==
+Rows: 8
+Precision: 0.5
+Recall: 1.0
+fbeta: 0.6666666666666666
+
+== native-country_Hungary ==
+Rows: 3
+Precision: 1.0
+Recall: 0.5
+fbeta: 0.6666666666666666
+
+== native-country_India ==
+Rows: 21
+Precision: 0.875
+Recall: 0.875
+fbeta: 0.875
+
+== native-country_Iran ==
+Rows: 12
+Precision: 0.3333333333333333
+Recall: 0.2
+fbeta: 0.25
+
+== native-country_Ireland ==
+Rows: 5
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Italy ==
+Rows: 14
+Precision: 0.75
+Recall: 0.75
+fbeta: 0.75
+
+== native-country_Jamaica ==
+Rows: 13
+Precision: 0.0
+Recall: 1.0
+fbeta: 0.0
+
+== native-country_Japan ==
+Rows: 11
+Precision: 0.75
+Recall: 0.75
+fbeta: 0.75
+
+== native-country_Laos ==
+Rows: 4
+Precision: 1.0
+Recall: 0.0
+fbeta: 0.0
+
+== native-country_Mexico ==
+Rows: 114
+Precision: 1.0
+Recall: 0.3333333333333333
+fbeta: 0.5
+
+== native-country_Nicaragua ==
+Rows: 7
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Peru ==
+Rows: 5
+Precision: 0.0
+Recall: 0.0
+fbeta: 1.0
+
+== native-country_Philippines ==
+Rows: 35
+Precision: 1.0
+Recall: 0.6875
+fbeta: 0.8148148148148148
+
+== native-country_Poland ==
+Rows: 14
+Precision: 0.6666666666666666
+Recall: 1.0
+fbeta: 0.8
+
+== native-country_Portugal ==
+Rows: 6
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Puerto-Rico ==
+Rows: 22
+Precision: 0.8333333333333334
+Recall: 0.8333333333333334
+fbeta: 0.8333333333333334
+
+== native-country_Scotland ==
+Rows: 3
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_South ==
+Rows: 13
+Precision: 0.3333333333333333
+Recall: 0.5
+fbeta: 0.4
+
+== native-country_Taiwan ==
+Rows: 11
+Precision: 0.75
+Recall: 0.75
+fbeta: 0.75
+
+== native-country_Thailand ==
+Rows: 5
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Trinadad&Tobago ==
+Rows: 3
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_United-States ==
+Rows: 5870
+Precision: 0.73920130399348
+Recall: 0.6320557491289198
+fbeta: 0.6814425244177311
+
+== native-country_Vietnam ==
+Rows: 5
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== native-country_Yugoslavia ==
+Rows: 2
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== occupation_? ==
+Rows: 389
+Precision: 0.6538461538461539
+Recall: 0.40476190476190477
+fbeta: 0.5
+
+== occupation_Adm-clerical ==
+Rows: 726
+Precision: 0.6338028169014085
+Recall: 0.46875
+fbeta: 0.5389221556886228
+
+== occupation_Armed-Forces ==
+Rows: 3
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== occupation_Craft-repair ==
+Rows: 821
+Precision: 0.6567164179104478
+Recall: 0.4861878453038674
+fbeta: 0.5587301587301587
+
+== occupation_Exec-managerial ==
+Rows: 838
+Precision: 0.7952127659574468
+Recall: 0.7531486146095718
+fbeta: 0.7736093143596379
+
+== occupation_Farming-fishing ==
+Rows: 193
+Precision: 0.5454545454545454
+Recall: 0.21428571428571427
+fbeta: 0.30769230769230765
+
+== occupation_Handlers-cleaners ==
+Rows: 273
+Precision: 0.5714285714285714
+Recall: 0.3333333333333333
+fbeta: 0.4210526315789474
+
+== occupation_Machine-op-inspct ==
+Rows: 378
+Precision: 0.59375
+Recall: 0.40425531914893614
+fbeta: 0.48101265822784806
+
+== occupation_Other-service ==
+Rows: 667
+Precision: 1.0
+Recall: 0.19230769230769232
+fbeta: 0.32258064516129037
+
+== occupation_Priv-house-serv ==
+Rows: 26
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== occupation_Prof-specialty ==
+Rows: 828
+Precision: 0.7879581151832461
+Recall: 0.7678571428571429
+fbeta: 0.7777777777777778
+
+== occupation_Protective-serv ==
+Rows: 136
+Precision: 0.7352941176470589
+Recall: 0.5952380952380952
+fbeta: 0.6578947368421053
+
+== occupation_Sales ==
+Rows: 729
+Precision: 0.7272727272727273
+Recall: 0.6666666666666666
+fbeta: 0.6956521739130435
+
+== occupation_Tech-support ==
+Rows: 189
+Precision: 0.7142857142857143
+Recall: 0.6862745098039216
+fbeta: 0.7000000000000001
+
+== occupation_Transport-moving ==
+Rows: 317
+Precision: 0.625
+Recall: 0.46875
+fbeta: 0.5357142857142857
+
+== education_10th ==
+Rows: 183
+Precision: 0.4
+Recall: 0.16666666666666666
+fbeta: 0.23529411764705882
+
+== education_11th ==
+Rows: 225
+Precision: 1.0
+Recall: 0.2727272727272727
+fbeta: 0.42857142857142855
+
+== education_12th ==
+Rows: 98
+Precision: 1.0
+Recall: 0.4
+fbeta: 0.5714285714285715
+
+== education_1st-4th ==
+Rows: 23
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== education_5th-6th ==
+Rows: 62
+Precision: 1.0
+Recall: 0.5
+fbeta: 0.6666666666666666
+
+== education_7th-8th ==
+Rows: 141
+Precision: 0.0
+Recall: 0.0
+fbeta: 1.0
+
+== education_9th ==
+Rows: 115
+Precision: 1.0
+Recall: 0.3333333333333333
+fbeta: 0.5
+
+== education_Assoc-acdm ==
+Rows: 198
+Precision: 0.7
+Recall: 0.5957446808510638
+fbeta: 0.6436781609195402
+
+== education_Assoc-voc ==
+Rows: 273
+Precision: 0.6470588235294118
+Recall: 0.5238095238095238
+fbeta: 0.5789473684210527
+
+== education_Bachelors ==
+Rows: 1053
+Precision: 0.7522935779816514
+Recall: 0.7288888888888889
+fbeta: 0.7404063205417607
+
+== education_Doctorate ==
+Rows: 77
+Precision: 0.864406779661017
+Recall: 0.8947368421052632
+fbeta: 0.8793103448275862
+
+== education_HS-grad ==
+Rows: 2085
+Precision: 0.6593886462882096
+Recall: 0.43768115942028984
+fbeta: 0.5261324041811848
+
+== education_Masters ==
+Rows: 369
+Precision: 0.8271028037383178
+Recall: 0.855072463768116
+fbeta: 0.8408551068883611
+
+== education_Preschool ==
+Rows: 10
+Precision: 1.0
+Recall: 1.0
+fbeta: 1.0
+
+== education_Prof-school ==
+Rows: 116
+Precision: 0.8181818181818182
+Recall: 0.9642857142857143
+fbeta: 0.8852459016393442
+
+== education_Some-college ==
+Rows: 1485
+Precision: 0.6857142857142857
+Recall: 0.51985559566787
+fbeta: 0.5913757700205339

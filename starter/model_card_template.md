@@ -18,7 +18,9 @@ The model training pipeline includes:
 
     Saving and loading the trained model with pickle
 
-Evaluation is performed on a held-out test set with standard classification metrics.
+    Testing the model on various slices of data
+
+Evaluation is performed on a held-out test set with standard classification metrics, as well as on various slices of data.
 
 ## Intended Use
 
@@ -62,7 +64,7 @@ The data preprocessing pipeline handles:
 
 ## Evaluation Data
 
-Evaluation is performed on the held-out 20% test data, processed with the same encoders as the training set. Additionally, model performance is sliced by different feature subsets (e.g., native-country categories) to assess performance disparities across subgroups.
+Evaluation is performed on the held-out 20% test data, processed with the same encoders as the training set. Additionally, model performance is sliced by different feature subsets (e.g., native-country categories, education, etc.) to assess performance disparities across subgroups.
 
 ## Metrics
 
@@ -85,7 +87,26 @@ Accuracy: 0.8571
 
 (Exact values depend on training runs and data splits.)
 
+
 Performance is also evaluated per-slice on categorical subgroups (e.g., by native-country) to monitor fairness and bias.
+
+Sample performance on data slices , for example for a few education slices, are below:
+
+== education_Prof-school ==
+Rows: 116
+Precision: 0.8181818181818182
+Recall: 0.9642857142857143
+fbeta: 0.8852459016393442
+
+== education_Some-college ==
+Rows: 1485
+Precision: 0.6857142857142857
+Recall: 0.51985559566787
+fbeta: 0.5913757700205339
+
+
+This analysis indicates (but is not definitive) that the model may underperform on lower education levels
+
 
 ## Ethical Considerations
 

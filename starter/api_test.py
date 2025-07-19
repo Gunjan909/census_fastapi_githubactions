@@ -1,5 +1,9 @@
 import requests
 
+'''
+invoke this from command line to test that render deployment works
+'''
+
 # Replace with your actual Render URL
 url = "https://census-fastapi-githubactions.onrender.com/predict"
 

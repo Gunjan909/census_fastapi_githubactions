@@ -112,16 +112,20 @@ feature_names = get_processed_column_names(test, cat_features, encoder)
 with open(DATA_DIR + "/../model/model.pkl", "rb") as f:
     model = pickle.load(f)
 
+#run predictons on model slices for native country and occupation
 results_country = predict_by_slice(model, X_test, y_test, feature_names, prefix="native-country")
 results_occupation = predict_by_slice(model, X_test, y_test, feature_names, prefix="occupation")
+results_education = predict_by_slice(model, X_test, y_test, feature_names, prefix="education")
 
 
-for results in [results_country, results_occupation]:
-    for col, data in results.items():
-        print(f"\n== {col} ==")
-        print(f"Rows: {len(data['indices'])}")
-        print(f"Precision: {data['precision']}")
-        print(f"Recall: {data['recall']}")
-        print(f"fbeta: {data['fbeta']}")
+
+with open("slice_output.txt", "w") as file:
+    for results in [results_country, results_occupation, results_education]:
+        for col, data in results.items():
+            print(f"\n== {col} ==", file=file)
+            print(f"Rows: {len(data['indices'])}", file=file)
+            print(f"Precision: {data['precision']}", file=file)
+            print(f"Recall: {data['recall']}", file=file)
+            print(f"fbeta: {data['fbeta']}", file=file)
 
     #print(f"Predictions: {data['predictions'][:5]}")  # just show first 5

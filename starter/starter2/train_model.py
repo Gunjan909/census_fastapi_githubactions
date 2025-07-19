@@ -64,9 +64,10 @@ with open(DATA_DIR + "/../model/lb.pkl", "wb") as f:
 with open(DATA_DIR + "/../model/model.pkl", "rb") as f:
     model2 = pickle.load(f)
 
-
+#perform inference (prediction on test set)
 preds = inference(model2, X_test)
 
+#compute model metrics
 precision, recall, fbeta = compute_model_metrics(y_test, preds)
 
 print(f"Precision: {precision:.4f}")
