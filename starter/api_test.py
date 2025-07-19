@@ -4,7 +4,18 @@ import requests
 invoke this from command line to test that render deployment works
 '''
 
-# Replace with your actual Render URL
+
+url = "https://census-fastapi-githubactions.onrender.com/"
+# Make GET request
+response = requests.get(url)
+
+# Print status code and response
+print(f"Status Code: {response.status_code}")
+print("Response JSON:", response.json())
+
+
+
+#Make post request
 url = "https://census-fastapi-githubactions.onrender.com/predict"
 
 payload = {
@@ -33,4 +44,5 @@ try:
 except requests.exceptions.JSONDecodeError:
     print("Non-JSON response:")
     print(response.text)
+
 
