@@ -35,7 +35,7 @@ def test_post_predict_low_income():
 
     response = client.post("/predict", json=payload)
     assert response.status_code == 200
-    assert response.json()["prediction"] in ['>50K', '<=50K']
+    assert response.json()["prediction"] in ['<=50K']
 
 
 def test_post_predict_high_income():
@@ -58,5 +58,5 @@ def test_post_predict_high_income():
 
     response = client.post("/predict", json=payload)
     assert response.status_code == 200
-    assert response.json()["prediction"] in ['>50K', '<=50K']
+    assert response.json()["prediction"] in ['>50K']
 
