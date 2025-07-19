@@ -93,7 +93,9 @@ def test_compute_model_metrics_perfect_preds():
 
 def test_model_loading_and_prediction():
     # Path to the saved model
-    model_path = "/home/gunjan/workspace/census_fastapi_githubactions/starter/model/model.pkl"
+    #model_path = "/home/gunjan/workspace/census_fastapi_githubactions/starter/model/model.pkl"
+    model_path = os.path.join(os.path.dirname(__file__), "../../../model/model.pkl")
+    model_path = os.path.abspath(model_path)
     
     assert os.path.exists(model_path), "model.pkl file not found"
 
